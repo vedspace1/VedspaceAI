@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedspace Feedback Room</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="room-container">
+        <div id="videos">
+            <div id="local-video" class="video-box">Local Video</div>
+            <div id="remote-video" class="video-box">Remote Video</div>
+        </div>
+        <div id="feedback-panel">
+            <div id="feedback-local" class="feedback-box">
+                <h3>Local Feedback</h3>
+                <div id="local-feedback"></div>
+            </div>
+            <div id="feedback-remote" class="feedback-box">
+                <h3>Remote Feedback</h3>
+                <div id="remote-feedback"></div>
+            </div>
+        </div>
+        <button id="start-call">Start Call</button>
+        <button id="end-call">End Call</button>
+    </div>
+    <script src="https://cdn.socket.io/4.5.1/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
